@@ -68,7 +68,7 @@ async function getMoralisSecurity(ca: string) {
   return await safeRequest(async () => {
     return await Moralis.SolApi.token.getTokenMetadata({
       network: "mainnet",
-      addresses: [ca]
+      address: [ca]
     });
   });
 }
